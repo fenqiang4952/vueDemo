@@ -1,7 +1,7 @@
-var chalk = require('chalk')
-var semver = require('semver')
-var packageConfig = require('../package.json')
-var shell = require('shelljs')
+var chalk = require('chalk') // 改变输出的颜色
+var semver = require('semver') // 版本管理
+var packageConfig = require('../package.json') 
+var shell = require('shelljs') // shelljs 
 function exec (cmd) {
   return require('child_process').execSync(cmd).toString().trim()
 }
